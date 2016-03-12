@@ -12,3 +12,22 @@
 #This method should accept an array as an argument (the movie queue)
 
 
+
+def first_movie(movies)
+  return movies.first
+end
+
+def watch_movie(movies)
+   movies.shift
+  movies
+end
+
+def update_queue(movies,movie)
+  movies << movie
+end
+
+def view_queue(movies)
+  movies.each do |movie|
+    puts "You will watch #{movie}"
+  end
+end
